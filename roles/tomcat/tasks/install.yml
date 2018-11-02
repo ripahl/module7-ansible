@@ -1,0 +1,13 @@
+---
+
+#- hosts: test-servers
+#  remote_user: root
+
+#  tasks:
+  - name: ensure tomcat is at the latest version
+    yum: name=tomcat state=latest
+#  - name: Tomcat Daemon Reload
+#    systemd:
+#      name: tomcat
+#      state: restarted
+#      daemon_reload: yes

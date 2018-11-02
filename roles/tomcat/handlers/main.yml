@@ -1,0 +1,6 @@
+---
+# handlers file for /etc/ansible/roles/tomcat
+  - name: reload systemctl
+    command: systemctl daemon-reload
+  - name: restart tomcat service
+    command: systemctl restart tomcat  

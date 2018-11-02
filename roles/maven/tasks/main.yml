@@ -1,0 +1,13 @@
+---
+
+#- hosts: test-servers
+#  remote_user: root
+
+#  tasks:
+  - name: ensure maven is at the latest version
+    yum: name=maven state=latest
+#  - name: Maven service with items example
+#    systemd:
+#      name: maven
+#      state: restarted
+#      daemon_reload: yes

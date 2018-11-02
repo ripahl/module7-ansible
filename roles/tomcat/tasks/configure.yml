@@ -1,0 +1,14 @@
+---
+#- hosts: test-servers
+#  remote_user: root
+
+# configuring tomcat
+#  tasks:
+   - name: tomcat.service file
+     copy: src=tomcat.service dest=/etc/systemd/system/tomcat.service
+#    copy: src=index.html dest=/var/www/html/index.html
+     notify:
+     - restart tomcat service
+
+   - name: send index.html
+     copy: src=index.html dest=/var/www/html/index.html

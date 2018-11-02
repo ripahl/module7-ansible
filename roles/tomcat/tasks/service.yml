@@ -1,0 +1,9 @@
+---
+
+#- hosts: test-servers
+#  remote_user: root
+
+#  tasks:
+# start tomcat service
+  - name: starting tomcat service
+    service: name=tomcat state=started
